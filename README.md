@@ -25,7 +25,7 @@ ShoppingCart Application is a sample application to calculate total amount of pr
 Clone the project
 
 ```bash
-git clone [https://github.com/billoreseema/ShoppingCart-Demo.git]
+git clone [https://github.com/billoreseema/RuleBased_ShoppingCart]
 ```
 
 Go to the project directory
@@ -37,12 +37,13 @@ cd superMarketDemo
 Run Application
 
 ```bash
-java -cp target/superMarketDemo-1.0-SNAPSHOT.jar ShoppingCartApp
+java -cp target/superMarketDemo-1.0-SNAPSHOT-jar-with-dependencies.jar ShoppingCartApp
 
-                OR 
-Go to path on cmd superMarketDemo\src\main\java 
-javac ShoppingCartApp.java
-java ShoppingCartApp
+or 
+java -cp superMarketDemo-1.0-SNAPSHOT-jar-with-dependencies.jar ShoppingCartApp
+
+Note :- copy and place products.csv and offerCatalog.csv files from resources directory to jar excution directory 
+
 
 ```
 
@@ -64,7 +65,6 @@ path for junit - src/test/ShoppingCartServiceTest.java
 
 ## Possible Extenstions
 
-- Offers can be added to external file and then loaded to code inorder to avoid each time compilations.
 - Application can be integrated to any Database only Repository module requires the connection changes
 - Loggers can be added to investigate issues and for future refrences
 - Diiferent types of offers can be exteneded. 
