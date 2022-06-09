@@ -1,0 +1,5 @@
+name: "Product A rule"
+description: "if product quantity is 3 unit prize should be 15"
+condition: "productInvoice.getProductQty() == 3"
+actions:
+  - "System.out.println(\"Condition satisfied\");"
